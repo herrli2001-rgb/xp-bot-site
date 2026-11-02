@@ -4,7 +4,11 @@ Product introduction at [xp-bot.cn](https://xp-bot.cn/), independently hosted on
 
 The November 3 redesign follows the measured layout and interaction sequence of the [Apple product reference](https://www.apple.com.cn/macbook-pro/proled-xdr-display/): product-first hero, sticky local navigation, large highlight cards with dot/progress and pause controls, product exploration, and continuous scroll close-ups. All product content and imagery belong to the XP BOT presentation; no Apple product media is included.
 
-Five 18-second H.264 films cover RAG, robot configuration, company onboarding, image templates and automation. They combine reviewed development screenshots with illustrative workflows and example data, clearly labelled; they are not live operation recordings. Films play in an accessible native dialog with controls. Motion respects reduced-motion settings. Video and carousel activity pause when appropriate.
+The current site uses five redacted native-interface films: a workspace montage, task status and search, template rules and fixed-area preview, robot entry and draft input, and company/personal connection tabs. These clips do not show a newly executed business job. Full knowledge Q&A and robot configuration recordings remain pending. Earlier demo-* files are illustrative films retained from the previous revision and are no longer used by the page.
+
+Nine real pinned project cases describe inputs, four workflow steps, three deliverables and operating conditions. RAG is explained as retrieval before answering, with source and image lookup and three usage stages.
+
+Motion includes contained scroll framing, pointer perspective and layer parallax, surface reflection, horizontal drag/snap with bounded inertia, text entrances, feature-pill expansion, camera pan/zoom, case transitions and fullscreen image expansion. Motion respects reduced-motion settings. Video and carousel activity pause when appropriate.
 
 ## Availability
 
