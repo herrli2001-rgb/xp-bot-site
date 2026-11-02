@@ -2,6 +2,12 @@
 
 Product introduction for [xp-bot.cn](https://xp-bot.cn/), hosted with GitHub Pages.
 
+Static HTML, CSS and JavaScript. Includes five 18-second H.264 workflow demonstrations: RAG, robot setup, company onboarding, image templates and scheduled automation. The films combine reviewed development screenshots with illustrative flows, clearly marked as example data; they are not live operation recordings.
+
+The creator reports that a manual run previously took 1–2 hours and is now executed on a configured background schedule. This is an individual usage example, not a uniform performance claim. Company onboarding assumes existing company authorization and model quota; no private company endpoints or credentials are published.
+
+Motion uses native Web Animations and a scroll-linked product scene, with replay and pause controls and reduced-motion support.
+
 Static HTML, CSS and JavaScript. No build step, external scripts, analytics or API keys. `main` publishes from the repository root. Keep `CNAME` and `.nojekyll`.
 
 ## Download status
