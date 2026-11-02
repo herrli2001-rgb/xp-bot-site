@@ -11,3 +11,16 @@
 /* Keep the incoming film inside its own stage during the slide. */
 .feature-panels{overflow:clip}
 .video-error{font-size:12px;line-height:1.8;color:#788393;margin-top:12px}.video-error a{text-decoration:underline;color:#007eac}
+
+/* Remove decorative CTA arrows and oversized color emphasis. */
+:root{--cyan:#e8e8ed;--blue:#55565b}
+.headline-mask .headline-line,.accent-text,.efficiency-after strong{color:#f5f5f7}
+.hero-actions .button-cyan{background:#f5f5f7;color:#151517}
+.hero-actions .text-link{color:#c7c7cc}
+.site-header::after,.scene-progress,.intro-controls{display:none!important}
+.feature-points li::before{background:#7b7d83}
+.step-number{color:#66676e}
+.workflow-details article>span{color:#b0b0b7}
+::selection{background:#d8d8dd;color:#151517}
+:where(a,button,summary,[tabindex]):focus-visible{outline-color:#8e8e93}
+@media(hover:hover) and (pointer:fine){.hero-actions .button-cyan:hover,.nav-cta:hover{background:#dedee3}.faq summary:hover{color:#4d4d53}.video-play:hover .play-disc{background:#242428dd}}
