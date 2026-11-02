@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f5ef">
+  <meta name="description" content="XP BOT 的独立网站。新的内容与体验，正在准备中。">
+  <meta property="og:title" content="XP BOT · 新的开始">
+  <meta property="og:description" content="新的内容与体验，正在准备中。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://xp-bot.cn/">
+  <link rel="canonical" href="https://xp-bot.cn/">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <title>XP BOT · 新的开始</title>
+  <style>
+    :root{color-scheme:light;--paper:#f4f5ef;--ink:#17251c;--muted:#657267;--line:#d9dfd4;--accent:#cefa87}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,"SF Pro Display",-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible{outline:3px solid #486e24;outline-offset:6px;border-radius:4px}
+    .page{max-width:1520px;margin:auto;padding:0 5.5vw;min-height:100svh;display:flex;flex-direction:column}
+    header{min-height:110px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}
+    .brand{display:inline-flex;align-items:center;gap:12px;font-weight:800;font-size:22px;letter-spacing:-.8px}
+    .brand-mark{width:35px;height:35px;display:grid;place-items:center;border-radius:10px;background:var(--ink);color:var(--accent);font-size:17px;letter-spacing:-2px;padding-right:2px}
+    .status{display:flex;align-items:center;gap:9px;font-size:12px;letter-spacing:1px;color:var(--muted)}
+    .status::before{content:"";width:7px;height:7px;background:#76a344;border-radius:50%;box-shadow:0 0 0 5px #e6ecd9}
+    main{flex:1;display:grid;grid-template-columns:1.08fr 1fr;align-items:center;gap:48px;padding:68px 0 78px}
+    .eyebrow{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:650;letter-spacing:2px;margin:0 0 28px}
+    .eyebrow::before{content:"";height:1px;width:28px;background:var(--ink)}
+    h1{font-weight:650;font-size:clamp(42px,4.6vw,72px);line-height:1.3;letter-spacing:-3px;margin:0}
+    h1 span{display:block;color:#8a9685}
+    .intro{font-size:16px;line-height:1.9;color:var(--muted);margin:28px 0 0;max-width:340px}
+    .address{display:inline-flex;align-items:center;gap:24px;margin-top:50px;border-bottom:1px solid #b9c2b2;padding:0 0 12px;font-size:14px;letter-spacing:.5px;font-weight:600}
+    .address svg{width:17px;height:17px}
+    .art{position:relative;min-height:430px;display:flex;align-items:center;justify-content:center;isolation:isolate}
+    .grid{position:absolute;inset:2% 0;background-image:radial-gradient(#b9c4ae 1px,transparent 1px);background-size:23px 23px;mask-image:radial-gradient(ellipse at center,#000 10%,transparent 72%);z-index:-2}
+    .orbit{position:absolute;width:96%;height:60%;border:1px solid #bcc7b3;border-radius:50%;transform:rotate(-33deg);z-index:-1}
+    .orbit::after{content:"";position:absolute;left:16%;top:6%;width:11px;height:11px;border-radius:50%;background:var(--ink);border:3px solid var(--paper);box-shadow:0 0 0 1px var(--ink)}
+    .tile{position:relative;width:272px;height:300px;transform:rotate(-7deg);border-radius:35px;background:var(--accent);border:1px solid #a7d469;box-shadow:15px 18px 0 var(--ink);display:flex;flex-direction:column;justify-content:space-between;padding:26px 27px 22px}
+    .tile-top{display:flex;justify-content:space-between;align-items:center;font-size:11px;font-weight:700;letter-spacing:1.5px}
+    .plus{font-size:22px;line-height:12px;font-weight:400}
+    .monogram{font-size:126px;line-height:1;font-weight:850;letter-spacing:-15px;margin-left:-6px}
+    .tile-bottom{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #9bbf6c;padding-top:15px;font-size:12px;font-weight:700;letter-spacing:4px}
+    .mini-bars{display:flex;align-items:center;gap:3px}
+    .mini-bars i{display:block;width:3px;height:14px;background:var(--ink)}
+    .mini-bars i:nth-child(2){height:9px}.mini-bars i:nth-child(3){height:18px}.mini-bars i:nth-child(4){height:11px}
+    .caption{position:absolute;bottom:0;right:7%;font-size:10px;letter-spacing:3px;color:#77856e;writing-mode:vertical-rl}
+    footer{min-height:84px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-top:1px solid var(--line);font-size:11px;letter-spacing:.6px;color:var(--muted)}
+    footer span:last-child{letter-spacing:1.5px}
+    @media(min-width:1600px){.page{padding-inline:82px}}
+    @media(max-width:760px){.page{padding-inline:25px}header{min-height:88px}.brand{font-size:20px}.status{font-size:10px;letter-spacing:0}.brand-mark{width:31px;height:31px;font-size:15px}main{grid-template-columns:1fr;gap:28px;padding:52px 0 45px}.eyebrow{font-size:10px;margin-bottom:23px}h1{font-size:43px;letter-spacing:-2px}.intro{font-size:14px;margin-top:23px}.address{margin-top:28px}.art{min-height:335px;max-width:440px;width:100%;margin:auto}.tile{width:218px;height:243px;border-radius:28px;padding:21px;box-shadow:12px 14px 0 var(--ink)}.monogram{font-size:101px;letter-spacing:-12px}.tile-top{font-size:9px}.tile-bottom{font-size:10px;padding-top:12px}.caption{right:3%;bottom:2px;font-size:8px}footer{min-height:78px;font-size:10px}footer span:last-child{letter-spacing:.5px}}
+    @media(max-width:360px){h1{font-size:37px}.status{font-size:9px}.brand{gap:7px;font-size:17px}.page{padding-inline:20px}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="brand" href="./" aria-label="XP BOT 首页"><span class="brand-mark" aria-hidden="true">XP</span>XP BOT</a>
+      <span class="status">网站准备中</span>
+    </header>
+    <main>
+      <section aria-labelledby="headline">
+        <p class="eyebrow">A NEW BEGINNING</p>
+        <h1 id="headline">新的开始。<span>正在准备中。</span></h1>
+        <p class="intro">欢迎来到 XP BOT。<br>新的内容与体验，将在这里与你见面。</p>
+        <a class="address" href="https://xp-bot.cn/">xp-bot.cn<svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 16 16 4M4 4h12v12" stroke="currentColor" stroke-width="1.5"/></svg></a>
+      </section>
+      <div class="art" aria-hidden="true">
+        <div class="grid"></div><div class="orbit"></div>
+        <div class="tile"><div class="tile-top"><span>XP BOT</span><span class="plus">＋</span></div><div class="monogram">XP</div><div class="tile-bottom"><span>HELLO, WORLD.</span><span class="mini-bars"><i></i><i></i><i></i><i></i></span></div></div>
+        <span class="caption">SOMETHING NEW IS ON ITS WAY</span>
+      </div>
+    </main>
+    <footer><span>© 2026 XP BOT</span><span>保持好奇，期待相见。</span></footer>
+  </div>
+</body>
+</html>
