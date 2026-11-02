@@ -1,29 +1,21 @@
 # XP BOT website
 
-Product introduction for [xp-bot.cn](https://xp-bot.cn/), hosted with GitHub Pages.
+Product introduction at [xp-bot.cn](https://xp-bot.cn/), independently hosted on GitHub Pages. Static HTML, CSS and JavaScript; no build step, third-party scripts, analytics or credentials. Keep CNAME and .nojekyll. The existing personal website is separate.
 
-Static HTML, CSS and JavaScript. Includes five 18-second H.264 workflow demonstrations: RAG, robot setup, company onboarding, image templates and scheduled automation. The films combine reviewed development screenshots with illustrative flows, clearly marked as example data; they are not live operation recordings.
+The November 3 redesign follows the measured layout and interaction sequence of the [Apple product reference](https://www.apple.com.cn/macbook-pro/proled-xdr-display/): product-first hero, sticky local navigation, large highlight cards with dot/progress and pause controls, product exploration, and continuous scroll close-ups. All product content and imagery belong to the XP BOT presentation; no Apple product media is included.
 
-The creator reports that a manual run previously took 1–2 hours and is now executed on a configured background schedule. This is an individual usage example, not a uniform performance claim. Company onboarding assumes existing company authorization and model quota; no private company endpoints or credentials are published.
+Five 18-second H.264 films cover RAG, robot configuration, company onboarding, image templates and automation. They combine reviewed development screenshots with illustrative workflows and example data, clearly labelled; they are not live operation recordings. Films play in an accessible native dialog with controls. Motion respects reduced-motion settings. Video and carousel activity pause when appropriate.
 
-Motion uses native Web Animations and a scroll-linked product scene, with replay and pause controls and reduced-motion support.
+## Availability
 
-Static HTML, CSS and JavaScript. No build step, external scripts, analytics or API keys. `main` publishes from the repository root. Keep `CNAME` and `.nojekyll`.
+Installer preparation is in progress. No public installation package is available. The download control stays disabled until a real distributable package is verified. The current development environment is macOS 13.0+ on Apple Silicon. Windows has not been released.
 
-## Download status
+## Product claims
 
-The installer is being prepared. The download button is intentionally disabled and the page clearly states that no public installer is available. Windows has not been released. Only enable downloads after a real distributable package is available and verified.
+The creator reports that a manual run previously took 1–2 hours and is now executed on a configured background schedule. This is an individual usage example. Company onboarding assumes existing authorization and quota; model and external service costs depend on the configured services. No company endpoints, private documents or credentials are published. Local jobs require the computer and relevant services to remain available.
 
-## Content and assets
+XP BOT is an independent customization based on DeepSeek Harness, not an official DeepSeek product.
 
-Uses the XP BOT brand and reviewed, empty-session screenshots from the current development build. Feature descriptions depend on configured model, image, knowledge and robot services. XP BOT is an independent customization based on DeepSeek Harness, not an official DeepSeek product.
+## Preview and updates
 
-Page direction references the typography, product focus and section rhythm of Apple's product pages; it does not use Apple product imagery.
-
-## Preview
-
-Run `python3 -m http.server 8765` from this directory. Open `http://127.0.0.1:8765/`.
-
-## Future download update
-
-Replace the disabled control in `index.html` with the verified installer URL, and update the release status, supported systems and FAQ together. Never put credentials or local app data in this repository.
+Run `python3 -m http.server 8765` from this directory and open `http://127.0.0.1:8765/`. CSS, script and film URLs use content hashes for cache updates. On release, replace the disabled download control with a verified package URL and update system requirements, release status and FAQ together.
