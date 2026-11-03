@@ -4,176 +4,160 @@
   {
     "id": "warning",
     "name": "大店预警监管",
-    "category": "监测与提醒",
-    "headline": "把待出库监管，串成完整流程。",
-    "desc": "读取待出库记录，核对页面总数与抓取结果，再按类目和商家汇总。报告先生成，通知按已配置的授权规则处理。",
+    "category": "经营监管 · 定时采集与报告",
+    "manualMinutes": 60,
+    "manualLabel": "1 小时",
+    "mode": "按计划后台执行",
+    "headline": "星级、履约、售后，一起盯。",
+    "desc": "把店铺星级、体验分及拖累因子，与揽收超时、待出库和售后明细放进同一套监管流程。按类目、商家归集，整理成日报、预警和通知草稿。",
     "steps": [
-      "读取记录",
-      "总量对账",
-      "分类汇总",
-      "生成交付"
+      "检查环境与登录",
+      "全量取数并对账",
+      "拆解星级与体验分",
+      "汇总履约和售后",
+      "生成报告与明细",
+      "按既定规则通知"
     ],
     "outputs": [
-      "分类 Excel",
-      "监管总览",
+      "经营监管报告",
+      "分类明细 Excel",
+      "风险与原因说明",
       "执行记录"
     ],
-    "note": "既有项目包含按时执行、异常重试与回执核对，支持核对通知内容与执行记录。"
+    "detailTitle": "真正连起来的，是一整套经营线索。",
+    "details": [
+      "星级报告不只报一个分数，还对照历史变化，找出拖累体验分的因子。",
+      "揽收、待出库与售后按各自口径处理；抓取量和页面总数对不上时，先处理异常。",
+      "按类目与商家组织明细，再把需要跟进的事项交给对应责任人。"
+    ],
+    "note": "人工单次用时由创建者提供。固定计划仍需本机、平台登录及相关服务可用；通知遵循已配置的授权规则。"
   },
   {
     "id": "mapping",
     "name": "大店对应表",
-    "category": "资料维护",
-    "headline": "维护主表，也把检查做完整。",
-    "desc": "从导出数据、关联商家、核对重复 SKU，到生成候选表、写后回读和维护报告。每轮沿用已有规则，减少从头整理。",
+    "category": "主表维护 · 全量核验",
+    "manualMinutes": 50,
+    "manualLabel": "50 分钟",
+    "mode": "自动维护与回读",
+    "headline": "关系表持续更新，人工信息接着保留。",
+    "desc": "从本轮新鲜全量源，建立大店商品与商家商品的对应关系。识别新增、变化和恢复在售，保留未在售历史，再把人工维护的信息带回新表。",
     "steps": [
-      "导出数据",
-      "匹配与查重",
-      "验收候选",
-      "写后回读"
+      "取得本轮全量",
+      "核对分页与唯一项",
+      "比较历史基线",
+      "合并人工信息",
+      "导入并完整回读",
+      "更新基线与收尾"
     ],
     "outputs": [
-      "候选主表",
-      "变更明细",
-      "维护报告"
+      "更新后的主表",
+      "变更与异常清单",
+      "原始记录留档",
+      "回读验收报告"
     ],
-    "note": "以当前表和本轮导出为依据，保留历史基线与回读结果。"
+    "detailTitle": "维护完整，也保护你已经整理的内容。",
+    "details": [
+      "按完整 SKU 对应，保留负责人、物流、产地、发货地和有意清空的字段。",
+      "长编号保持精确静态值；发现重复 SKU 或商家冲突时，回到本轮来源核实并留档。",
+      "写后刷新、完整导出并逐格回读，通过后才更新成功基线，完成后核对解锁状态。"
+    ],
+    "note": "已有历史执行记录及可复用技能。每轮以最新数据为准，耗时随数据量、供应商确认及平台等待变化。"
   },
   {
     "id": "newproduct",
     "name": "新品表，上新全流程",
-    "category": "新品跟进",
-    "headline": "从供应商报价，接着往下办。",
-    "desc": "整理报价与规格，计算暂定价，补齐商家、图片和商品入口，再登记到新品跟进表。把零散信息放回同一条工作线索。",
+    "category": "新品跟进 · 从报价到商品内容",
+    "manualMinutes": 30,
+    "manualLabel": "30 分钟",
+    "mode": "按确认阶段接续执行",
+    "headline": "报价、铺货、上架，到主图和视频。",
+    "desc": "供应商报价先进入跟进表，按规则计算建议售价，核对商家和规格；再按本次授权接续供销铺货、改价上架，以及京麦主图、前台规格名称和主图视频配置。",
     "steps": [
-      "整理报价",
-      "核对规格",
-      "补齐资料",
-      "登记跟进"
+      "整理报价与规格",
+      "登记跟进并查重",
+      "核对货源与铺货",
+      "改价回读并上架",
+      "配置主图与视频",
+      "更新台账并复核"
     ],
     "outputs": [
       "新品跟进表",
-      "规格与价格",
-      "商品入口"
+      "价格差异与建议",
+      "商品内容与素材",
+      "执行及回读记录"
     ],
-    "note": "登记跟进与实际上架、改价分开处理；线上变更按具体任务授权执行。"
+    "detailTitle": "不只登记报价，后面的上新步骤也接上。",
+    "details": [
+      "按商家、商品和规格共同核对，不能只凭同名商品或相近价格判断归属。",
+      "区分供销货源和京麦编辑入口，核验商品确实生成、售价已保存、上架状态有效。",
+      "主图、前台规格名和视频均有实际流程；已有内容按本次要求保留或替换，修改后再回读。"
+    ],
+    "note": "这个项目包含多个可独立执行的阶段。每次只推进本次确认的步骤，登记报价与线上改动分开处理。"
   },
   {
     "id": "materials",
     "name": "大店商品素材巡检",
-    "category": "商品运营",
-    "headline": "找到缺口，补齐，再复查。",
-    "desc": "巡检卖点文本、场景图、透明图等素材，整理待补项，按要求准备素材与导入文件。提交之后，再核对结果和驳回项。",
+    "category": "素材巡检 · 补全与复检",
+    "manualMinutes": 180,
+    "manualLabel": "3 小时",
+    "mode": "巡检、补全与复检代办",
+    "headline": "从发现缺口，到补齐并复查。",
+    "desc": "逐项检查在售商品的通用卖点、透明图、白底图、场景图和卖点图，区分缺失、已有与审核驳回。先复用合适素材，再处理需要新生成或修订的内容。",
     "steps": [
-      "扫描缺口",
-      "准备素材",
-      "组织导入",
-      "复查结果"
+      "扫描在售商品",
+      "区分缺口与驳回",
+      "补卖点与复用图",
+      "按需生成和处理",
+      "合并材料一次导入",
+      "回查结果与审核"
     ],
     "outputs": [
-      "素材巡检表",
-      "图片与卖点",
-      "结果清单"
+      "素材巡检与缺口表",
+      "卖点与素材文件",
+      "合并导入材料",
+      "复检及驳回清单"
     ],
-    "note": "已有流程已整理成可复用技能；图片生成、素材准备和平台验收是不同环节。"
+    "detailTitle": "复用、生成、提交、验收，各有位置。",
+    "details": [
+      "同一商品的合适图片可复用到对应规格；颜色、比例和图像类型仍要逐项核对。",
+      "把卖点与多类图片合并成一份导入材料，减少多轮等待，保留不需要改动的内容。",
+      "场景图要符合背景要求，透明图要检查抠图边缘；提交完成后再分清处理中、通过和驳回。"
+    ],
+    "note": "3 小时指创建者提供的典型人工单次处理时间。平台生成、处理和审核等待不等于需要持续人工值守。"
   },
   {
     "id": "tagging",
     "name": "大店自动化新品打标",
-    "category": "规则与表格",
-    "headline": "识别新品，准备一整套打标材料。",
-    "desc": "复用历史数据与既有处理规则，整理新品清单、校验日期和重复记录，生成用于后续打标的表格与材料。",
+    "category": "新品申报 · 历史查重与材料",
+    "manualMinutes": 30,
+    "manualLabel": "30 分钟",
+    "mode": "自动出稿，审批后接续",
+    "headline": "先找出真正的新品，再整理申请材料。",
+    "desc": "从本轮在售列表读取完整 SPU、上架时间和标题，与正式历史批次查重。生成申请 Excel、带序号截图和邮件文案，审批后再按授权补图、接续申请表。",
     "steps": [
-      "读取数据",
-      "核对历史",
-      "整理新品",
-      "生成材料"
+      "采集本轮在售",
+      "按完整 SPU 查重",
+      "核对批次与日期",
+      "生成表格与截图",
+      "接收对应审批图",
+      "按授权追加申请"
     ],
     "outputs": [
-      "新品清单",
-      "打标材料",
-      "校验记录"
+      "新品申请 Excel",
+      "带序号申请截图",
+      "审批邮件文案",
+      "查重与校验记录"
     ],
-    "note": "沿用真实项目的历史基线与规则，避免重复整理、漏项和重复打标。"
-  },
-  {
-    "id": "aftersale",
-    "name": "拉取京麦近30天售后明细",
-    "category": "数据与分析",
-    "headline": "从导出明细，到看清问题。",
-    "desc": "设置近30天范围，核对日期和导出任务，校验原始行数与服务单号，再按约定口径生成商家、商品排名和分析文件。",
-    "steps": [
-      "设置范围",
-      "导出与校验",
-      "按口径分析",
-      "交付 Excel"
+    "detailTitle": "“出材料”和“已申报”，状态说清楚。",
+    "details": [
+      "草稿、演练和正式历史分开；缺失历史时先核实，避免把已有商品重新当成新品。",
+      "核对采集总量、唯一 SPU、日期与数量，长编号保持完整，表格保存后再回读。",
+      "审批截图对应本批次后再补入；邮件发送和线上追加按具体授权推进。"
     ],
-    "outputs": [
-      "原始明细",
-      "商家与商品排名",
-      "口径说明"
-    ],
-    "note": "历史记录：首次搭建及排查约34分钟；复用流程目标为2–4分钟，另计平台等待，并非每次实测保证。"
-  },
-  {
-    "id": "robotdev",
-    "name": "机器人开发",
-    "category": "工具接入",
-    "headline": "一句需求，进入配置流程。",
-    "desc": "检测现有状态，打开必要页面，指引本人登录和创建应用。能自动处理的配置由助手完成，测试消息在明确授权后发送。",
-    "steps": [
-      "检查状态",
-      "补齐配置",
-      "本人授权",
-      "验证连接"
-    ],
-    "outputs": [
-      "配置状态",
-      "连接核验",
-      "测试回执"
-    ],
-    "note": "不在公开网页中展示真实凭据，也不会因观看演示而发送测试消息。"
-  },
-  {
-    "id": "diagnosis",
-    "name": "电脑卡顿原因排查",
-    "category": "本机诊断",
-    "headline": "先找到原因，再决定怎么处理。",
-    "desc": "读取内存、磁盘和进程占用，解释瓶颈与可能原因，提出处理步骤，再复检指标。把“感觉卡”变成可检查的线索。",
-    "steps": [
-      "读取指标",
-      "定位占用",
-      "给出方案",
-      "再次复检"
-    ],
-    "outputs": [
-      "资源诊断",
-      "处理建议",
-      "前后对比"
-    ],
-    "note": "诊断与实际清理分开；涉及清理或重启时由你决定。"
-  },
-  {
-    "id": "monitor",
-    "name": "自动抢占脚本",
-    "category": "条件监测",
-    "headline": "条件满足时，接着执行已配置动作。",
-    "desc": "监测目标排期页签、表格是否可编辑以及是否有空位，按既有规则执行填写；登录失效或表格结构异常时提醒。",
-    "steps": [
-      "监测条件",
-      "校验页面",
-      "执行规则",
-      "异常提醒"
-    ],
-    "outputs": [
-      "监测状态",
-      "执行记录",
-      "异常通知"
-    ],
-    "note": "这里介绍既有项目的条件监测能力，不在演示中触发真实填写。"
+    "note": "30 分钟指创建者提供的典型人工单次处理时间。自动出稿不代表邮件已发送、审批已完成或平台已审核。"
   }
 ];
-  const ASSET_HASHES = {"poster-robot.jpg":"29e702a1ef2b","xp-robot-native.jpg":"b46cc5fb3866","demo-automation.mp4":"c26f64f3cfb2","xp-template-native.jpg":"2cacc8a58314","poster-setup.jpg":"017618394fed","poster-automation.jpg":"8c42452e6b9a","native-overview.mp4":"ae347b1aa25f","native-poster-overview.jpg":"3e5958505673","xp-template-example.png":"59e07eebea0b","xp-icon.png":"6a498b063921","social-card.jpg":"c9e95baac0d2","xp-robot.png":"56b5bd4a4122","poster-rag.jpg":"c9e95baac0d2","xp-overview.jpg":"32c396f077e5","native-poster-templates.jpg":"2cacc8a58314","native-setup.mp4":"7410d6d61a2f","preview-templates.mp4":"78554a96d0dc","xp-pinned-projects.png":"217651eea047","native-robot.mp4":"96c0166c549a","preview-robot.mp4":"1328f6eb2a89","demo-robot.mp4":"c1300eef8ce0","native-templates.mp4":"d804069b3b0e","preview-setup.mp4":"6631051baa74","demo-setup.mp4":"82f11e5a9c8a","native-automation.mp4":"2f1e9e831815","native-poster-automation.jpg":"e1675872bf8b","preview-automation.mp4":"6ab1491300ec","demo-rag.mp4":"0e712f6ba514","poster-templates.jpg":"2de94c4598e8","demo-templates.mp4":"940ff189385c","xp-images.png":"274832e1f0e4","native-poster-setup.jpg":"0669e70ff211","xp-knowledge.png":"629c4247c0ca","native-poster-robot.jpg":"b46cc5fb3866","xp-mark.png":"0abcb6ce6641"};
+  const ASSET_HASHES = {"native-automation.mp4":"8bc4ab238314","native-overview.mp4":"15f7d0567411","native-poster-automation.jpg":"bb20afa37144","native-poster-robot.jpg":"a7c0115ca8ea","native-poster-setup.jpg":"230f65e49cf6","native-poster-templates.jpg":"6dc4582ac850","native-robot.mp4":"23d1d10b465f","native-setup.mp4":"2ba5f52e3745","native-templates.mp4":"356be873e10f","preview-automation.mp4":"3ac7f0616dc7","preview-robot.mp4":"319706bfbd3e","preview-setup.mp4":"7682bd990160","preview-templates.mp4":"bcd1edba3e33","xp-automation-overview.svg":"74abdd8b0ffc","xp-overview.jpg":"32c396f077e5","xp-robot-native.jpg":"a7c0115ca8ea","xp-template-native.jpg":"6dc4582ac850"};
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const narrow = matchMedia('(max-width: 760px)');
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
@@ -395,7 +379,7 @@
 
   const presets={
     rag:{image:'xp-overview.jpg',scale:1.25,x:'-3%',y:'3%',origin:'62% 43%',alt:'XP BOT 知识库助手实机界面'},
-    automation:{image:'xp-pinned-projects.png',scale:1.04,x:'0%',y:'0%',origin:'50% 50%',alt:'XP BOT 置顶的九个真实项目'},
+    automation:{image:'xp-automation-overview.svg',scale:1.04,x:'0%',y:'0%',origin:'50% 50%',alt:'五个真实流程的概览示意'},
     templates:{image:'xp-template-native.jpg',scale:1.2,x:'-3%',y:'3%',origin:'70% 32%',alt:'XP BOT 图片与模板实机界面'},
     robot:{image:'xp-robot-native.jpg',scale:1.25,x:'-3%',y:'3%',origin:'65% 45%',alt:'XP BOT 机器人助手实机界面'}
   };
@@ -430,9 +414,11 @@
     const c=CASES[index];if(!c)return;
     caseButtons.forEach((b,i)=>{b.setAttribute('aria-selected',String(i===index));b.tabIndex=i===index?0:-1;});
     caseDetail.setAttribute('aria-labelledby',`case-tab-${c.id}`);
-    caseDetail.innerHTML=`<p class="case-category">${c.category}</p><h3>${c.headline}</h3><p class="case-description">${c.desc}</p><ol class="case-flow">${c.steps.map((step,i)=>`<li><span>0${i+1}</span><b>${step}</b></li>`).join('')}</ol><div class="case-outputs"><span>交付</span>${c.outputs.map(v=>`<b>${v}</b>`).join('')}</div><p class="case-note">${c.note}</p>`;
+    caseDetail.innerHTML=`<p class="case-category">${c.category}</p><div class="case-timing"><div><span>原来 · 人工完整做一次</span><strong>${c.manualLabel}</strong></div><i aria-hidden="true">→</i><div><span>现在 · 已沉淀的流程</span><b>${c.mode}</b></div></div><h3>${c.headline}</h3><p class="case-description">${c.desc}</p><ol class="case-flow">${c.steps.map((step,i)=>`<li><span>0${i+1}</span><b>${step}</b></li>`).join('')}</ol><div class="case-outputs"><span>交付</span>${c.outputs.map(v=>`<b>${v}</b>`).join('')}</div><div class="case-experience"><h4>${c.detailTitle}</h4><ul>${c.details.map(v=>`<li>${v}</li>`).join('')}</ul></div><p class="case-note">${c.note}</p>`;
     animate(caseDetail,[{opacity:.3,transform:'translateX(15px)'},{opacity:1,transform:'translateX(0)'}],{duration:600});
     if(focus)caseButtons[index].focus({preventScroll:true});
+    const detailTop=caseDetail.getBoundingClientRect().top;
+    if(detailTop<86)scrollTo({top:scrollY+detailTop-92,behavior:reduced.matches?'instant':'smooth'});
     if(narrow.matches){const b=caseButtons[index],parent=b.parentElement;parent.scrollTo({left:b.offsetLeft-parent.offsetLeft-parent.clientWidth/2+b.offsetWidth/2,behavior:reduced.matches?'instant':'smooth'});}
     requestMeasure();
   }
@@ -546,6 +532,10 @@
   if('ResizeObserver'in window)new ResizeObserver(requestMeasure).observe(document.body);
   document.addEventListener('visibilitychange',()=>{if(document.hidden){inlineVideos.forEach(v=>v.pause());fullFilm.pause();cancelAnimationFrame(pointerFrame);pointerFrame=0;}else updateVideos();updateProgressLoop();});
 
+  const quickStage=document.querySelector('.quicklinks-stage');
+  if(quickStage)new IntersectionObserver((entries,observer)=>{entries.forEach(entry=>{if(entry.isIntersecting){quickStage.classList.add('is-visible');observer.unobserve(quickStage);}});},{threshold:.2}).observe(quickStage);
+  const kbDiagram=document.querySelector('.kb-diagram');
+  if(kbDiagram)new IntersectionObserver(entries=>kbDiagram.classList.toggle('is-inview',entries[0].isIntersecting),{threshold:.2}).observe(kbDiagram);
   const revealTargets=[...document.querySelectorAll('[data-reveal]')];
   revealTargets.forEach(element=>{
     const pieces=element.innerHTML.split(/<br\s*\/?\s*>/i);
