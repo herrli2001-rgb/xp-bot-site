@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "supabaseUrl": "https://lnlewhjrppwmwjfchwqi.supabase.co",
+  "publishableKey": "sb_publishable_9_ndC0Lwqs32zlaUzTbMHQ_s51dEQs8",
+  "emailEnabled": false,
+  "githubEnabled": true,
+  "siteUrl": "https://xp-bot.cn",
+  "releaseManifest": "https://xp-bot.cn/updates/releases.json"
+}
