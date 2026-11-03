@@ -71,7 +71,7 @@
     "manualLabel": "30 分钟",
     "mode": "按确认阶段接续执行",
     "headline": "报价、铺货、上架，到主图和视频。",
-    "desc": "供应商报价先进入跟进表，按规则计算建议售价，核对商家和规格；再按本次授权接续供销铺货、改价上架，以及京麦主图、前台规格名称和主图视频配置。",
+    "desc": "供应商报价先进入跟进表，按规则计算建议售价，核对商家和规格；再按本次授权接续供销铺货、改价上架，以及商品后台主图、前台规格名称和主图视频配置。",
     "steps": [
       "整理报价与规格",
       "登记跟进并查重",
@@ -89,7 +89,7 @@
     "detailTitle": "不只登记报价，后面的上新步骤也接上。",
     "details": [
       "按商家、商品和规格共同核对，不能只凭同名商品或相近价格判断归属。",
-      "区分供销货源和京麦编辑入口，核验商品确实生成、售价已保存、上架状态有效。",
+      "区分供销货源和商品后台编辑入口，核验商品确实生成、售价已保存、上架状态有效。",
       "主图、前台规格名和视频均有实际流程；已有内容按本次要求保留或替换，修改后再回读。"
     ],
     "note": "这个项目包含多个可独立执行的阶段。每次只推进本次确认的步骤，登记报价与线上改动分开处理。"
@@ -157,7 +157,7 @@
     "note": "30 分钟指创建者提供的典型人工单次处理时间。自动出稿不代表邮件已发送、审批已完成或平台已审核。"
   }
 ];
-  const ASSET_HASHES = {"native-automation.mp4":"8bc4ab238314","native-overview.mp4":"15f7d0567411","native-poster-automation.jpg":"bb20afa37144","native-poster-robot.jpg":"a7c0115ca8ea","native-poster-setup.jpg":"230f65e49cf6","native-poster-templates.jpg":"6dc4582ac850","native-robot.mp4":"23d1d10b465f","native-setup.mp4":"2ba5f52e3745","native-templates.mp4":"356be873e10f","preview-automation.mp4":"3ac7f0616dc7","preview-robot.mp4":"319706bfbd3e","preview-setup.mp4":"7682bd990160","preview-templates.mp4":"bcd1edba3e33","xp-automation-overview.svg":"74abdd8b0ffc","xp-overview.jpg":"32c396f077e5","xp-robot-native.jpg":"a7c0115ca8ea","xp-template-native.jpg":"6dc4582ac850"};
+  const ASSET_HASHES = {"native-automation.mp4": "8bc4ab238314", "native-overview.mp4": "a563ab5c2548", "native-poster-automation.jpg": "8d7becd3b1f8", "native-poster-robot.jpg": "2c1cf2e1e204", "native-poster-setup.jpg": "5b92ce3f4d89", "native-poster-templates.jpg": "6f3b62f0a523", "native-robot.mp4": "6e5684448890", "native-setup.mp4": "792b4dd88768", "native-templates.mp4": "356be873e10f", "preview-automation.mp4": "8bc4ab238314", "preview-robot.mp4": "6e5684448890", "preview-setup.mp4": "792b4dd88768", "preview-templates.mp4": "356be873e10f", "xp-automation-overview.svg": "74abdd8b0ffc", "xp-overview.jpg": "a83fc0681b5f", "xp-robot-native.jpg": "2c1cf2e1e204", "xp-template-native.jpg": "6f3b62f0a523"};
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const narrow = matchMedia('(max-width: 760px)');
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
