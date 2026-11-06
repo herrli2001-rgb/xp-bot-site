@@ -16,4 +16,9 @@ button{transition:background-color .2s ease,transform .2s var(--motion-ease)}but
 @media(prefers-reduced-motion:reduce){.rag-card-steps span{animation:none!important}.rag-window-still{transition:none;transform:none}}
 .highlights{scroll-margin-top:-10px}.tour-viewport[data-view=automation] .tour-camera img{border-radius:9px}.tour-viewport[data-view=automation]{background:#101011}
 .launch-pin{height:calc(100svh - 44px)}
-@media(max-width:760px){.globalnav-inner>a:nth-child(-n+3),.globalnav-inner>a:last-child{display:flex!important}.globalnav-inner>a:nth-child(n+4):not(:last-child){display:none!important}}
+/* Keep account access explicit rather than depending on a link's position. */
+.globalnav a.nav-account-link,.localnav a.nav-account-link{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:0 14px;border-radius:999px;background:#f5f5f7;color:#1d1d1f;font-size:12px;font-weight:550;white-space:nowrap;text-decoration:none}
+.globalnav a.nav-account-link:hover,.localnav a.nav-account-link:hover{background:#fff;color:#1d1d1f}
+.nav-account-link:focus-visible{outline:3px solid #2997ff;outline-offset:3px}
+@media(min-width:761px) and (max-width:1068px){.globalnav-inner{gap:18px}.globalnav-inner>a[href="#skill-creator"],.globalnav-inner>a[href="#crawler"]{display:none}}
+@media(max-width:760px){.globalnav-inner>a{display:none!important}.globalnav-inner>a.global-brand,.globalnav-inner>a.nav-overview-link,.globalnav-inner>a.nav-download-link,.globalnav-inner>a.nav-account-link{display:inline-flex!important}.globalnav-inner>a.nav-overview-link{margin-right:auto}.globalnav-inner>a.nav-account-link{margin-left:0;min-height:36px;padding:0 12px}.localnav-links>:not(.nav-account-link){display:none}.localnav-links>a.nav-account-link{display:inline-flex;min-height:36px}}
