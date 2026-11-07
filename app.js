@@ -157,7 +157,7 @@
     "note": "30 分钟指创建者提供的典型人工单次处理时间。自动出稿不代表邮件已发送、审批已完成或平台已审核。"
   }
 ];
-  const ASSET_HASHES = {"native-automation.mp4": "8bc4ab238314", "native-overview.mp4": "a563ab5c2548", "native-poster-automation.jpg": "8d7becd3b1f8", "native-poster-robot.jpg": "2c1cf2e1e204", "native-poster-setup.jpg": "5b92ce3f4d89", "native-poster-templates.jpg": "6f3b62f0a523", "native-robot.mp4": "6e5684448890", "native-setup.mp4": "792b4dd88768", "native-templates.mp4": "356be873e10f", "preview-automation.mp4": "8bc4ab238314", "preview-robot.mp4": "6e5684448890", "preview-setup.mp4": "792b4dd88768", "preview-templates.mp4": "356be873e10f", "xp-automation-overview.svg": "74abdd8b0ffc", "xp-overview.jpg": "a83fc0681b5f", "xp-robot-native.jpg": "2c1cf2e1e204", "xp-template-native.jpg": "6f3b62f0a523"};
+  const ASSET_HASHES = {"poster-robot.jpg": "1343151bc215", "xp-robot-native.jpg": "1343151bc215", "demo-automation.mp4": "2101eace5507", "xp-template-native.jpg": "363611b6f23e", "poster-setup.jpg": "49b3cc94e222", "poster-automation.jpg": "54c291135e9d", "native-overview.mp4": "1dd65305090f", "native-poster-overview.jpg": "512669c10344", "xp-template-example.png": "59e07eebea0b", "xp-icon.png": "6a498b063921", "social-card.jpg": "3545a9c9fc14", "xp-robot.png": "ac5a7405bbc6", "poster-rag.jpg": "9dd7c59d9c10", "xp-overview.jpg": "512669c10344", "native-poster-templates.jpg": "197ce4e0cbc2", "demo-overview.mp4": "1dd65305090f", "native-setup.mp4": "a41bae832b80", "preview-templates.mp4": "4fcdbf0cf438", "xp-pinned-projects.png": "05638ff06284", "native-robot.mp4": "2f64f52940a4", "preview-robot.mp4": "2f64f52940a4", "demo-robot.mp4": "2f64f52940a4", "native-templates.mp4": "4fcdbf0cf438", "preview-setup.mp4": "a41bae832b80", "demo-setup.mp4": "a41bae832b80", "native-automation.mp4": "2101eace5507", "native-poster-automation.jpg": "54c291135e9d", "preview-automation.mp4": "2101eace5507", "demo-rag.mp4": "0a28cbc3a3f6", "xp-automation-overview.svg": "74abdd8b0ffc", "poster-templates.jpg": "197ce4e0cbc2", "demo-templates.mp4": "4fcdbf0cf438", "xp-images.png": "3445c99ff6d9", "native-poster-setup.jpg": "49b3cc94e222", "favicon.svg": "7e03b7a57b02", "xp-knowledge.png": "263f4bda785c", "native-poster-robot.jpg": "1343151bc215", "xp-mark.png": "0abcb6ce6641"};
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const narrow = matchMedia('(max-width: 760px)');
   const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
@@ -187,11 +187,11 @@
   const visibleVideos = new Set();
   const animations = new Set();
   const filmInfo = {
-    overview: {title:'XP BOT 工作空间 · 实机操作', file:'native-overview.mp4', poster:'xp-overview.jpg'},
-    automation: {title:'定时任务状态与搜索 · 实机界面', file:'native-automation.mp4', poster:'native-poster-automation.jpg'},
-    robot: {title:'机器人入口与输入 · 完整配置演示待补录', file:'native-robot.mp4', poster:'native-poster-robot.jpg'},
-    setup: {title:'接入设置 · 实机界面', file:'native-setup.mp4', poster:'native-poster-setup.jpg'},
-    templates: {title:'图片模板 · 实机操作', file:'native-templates.mp4', poster:'native-poster-templates.jpg'}
+    overview: {title:'内测版 v0.1 · 当前工作空间导览', file:'native-overview.mp4', poster:'xp-overview.jpg'},
+    automation: {title:'POP 大店 · 预警、素材巡检与新品打标角色导览', file:'native-automation.mp4', poster:'native-poster-automation.jpg'},
+    robot: {title:'机器人配置助手 · 当前引导界面', file:'native-robot.mp4', poster:'native-poster-robot.jpg'},
+    setup: {title:'API 配置 · 模型选择与连接测试界面', file:'native-setup.mp4', poster:'native-poster-setup.jpg'},
+    templates: {title:'图片助手 · 蓝杯模板编辑与保存导览', file:'native-templates.mp4', poster:'native-poster-templates.jpg'}
   };
   const clamp = (v,a=0,b=1) => Math.max(a,Math.min(b,v));
   const ramp = (p,a,b) => clamp((p-a)/(b-a));
@@ -378,10 +378,10 @@
   new IntersectionObserver(entries=>{galleryVisible=entries[0].isIntersecting&&entries[0].intersectionRatio>.18;updateVideos();},{threshold:[0,.18,.6]}).observe(viewport);
 
   const presets={
-    rag:{image:'xp-overview.jpg',scale:1.25,x:'-3%',y:'3%',origin:'62% 43%',alt:'XP BOT 知识库助手实机界面'},
+    rag:{image:'xp-knowledge.png',scale:1.08,x:'0%',y:'0%',origin:'62% 43%',alt:'XP BOT 知识库助手实机界面'},
     automation:{image:'xp-automation-overview.svg',scale:1.04,x:'0%',y:'0%',origin:'50% 50%',alt:'五个真实流程的概览示意'},
-    templates:{image:'xp-template-native.jpg',scale:1.2,x:'-3%',y:'3%',origin:'70% 32%',alt:'XP BOT 图片与模板实机界面'},
-    robot:{image:'xp-robot-native.jpg',scale:1.25,x:'-3%',y:'3%',origin:'65% 45%',alt:'XP BOT 机器人助手实机界面'}
+    templates:{image:'xp-template-native.jpg',scale:1.06,x:'-3%',y:'3%',origin:'70% 32%',alt:'XP BOT 图片与模板实机界面'},
+    robot:{image:'xp-robot-native.jpg',scale:1.08,x:'-3%',y:'3%',origin:'65% 45%',alt:'XP BOT 机器人助手实机界面'}
   };
   const tourCamera=document.querySelector('.tour-camera');
   const tourImage=document.querySelector('#tour-image');
