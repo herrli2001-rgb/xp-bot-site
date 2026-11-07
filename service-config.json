@@ -5,5 +5,7 @@
   "emailEnabled": true,
   "githubEnabled": true,
   "siteUrl": "https://xp-bot.cn",
-  "releaseManifest": "https://xp-bot.cn/updates/releases.json"
+  "releaseManifest": "https://xp-bot.cn/updates/releases.json",
+  "desktopEnabled": true,
+  "downloadsEnabled": true
 }
