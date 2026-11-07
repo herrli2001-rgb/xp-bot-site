@@ -1,8 +1,22 @@
 {
-  "schema": 1,
+  "schema": 2,
+  "channel": "beta",
   "product": "XP BOT",
-  "bundleId": "local.gotbot.desktop",
-  "channel": "stable",
-  "release": null,
-  "message": "公开分发版本准备中。"
+  "release": {
+    "notes": "XP BOT 内测版 v0.1\n\n适用于 macOS 14.0 或更新版本、Apple Silicon 芯片的 Mac。\n\n- 官网账号登录、显示 ID 与头像、私密反馈和新版提醒。\n- 独立功能栏，置顶/项目/最近会话可折叠，功能可在设置中选择和排序。\n- 知识库、图片、机器人及 POP 大店助手按各自角色引导使用。\n- 文件以可点击卡片交付，图片直接在对话中展示。\n- 预置 24 份软件与功能流程说明；不包含开发者的聊天、账号、密钥、浏览器登录态、私人知识库或业务明细。\n- 文字检索模型随包提供，图片语义检索模型首次启用时下载到本机（约 717 MB）。模型 API 及业务服务需自行配置和登录。\n\n安装：登录官网并验证邮箱后下载，解压并将 XP BOT.app 放入应用程序。当前内测包使用本地签名，尚未完成 Apple 公证；请核对官网来源并按 macOS 系统提示确认。\n升级：先完成当前任务，退出 XP BOT 后替换应用；已有本机资料继续保留。\n",
+    "assets": [
+      {
+        "id": "80bb5cb5-137f-40ba-a195-701a98e85acd",
+        "arch": "arm64",
+        "size": 978983224,
+        "sha256": "57561f0567ed63233b6c03fd37f497ca4f952abe61679c572c2f897a80af3db3",
+        "filename": "XP-BOT-v0.1-macOS-arm64.zip",
+        "platform": "darwin"
+      }
+    ],
+    "version": "0.3.13",
+    "publishedAt": "2026-11-07T16:57:39.300772+00:00",
+    "displayVersion": "内测版 v0.1"
+  },
+  "bundleId": "local.gotbot.desktop"
 }
