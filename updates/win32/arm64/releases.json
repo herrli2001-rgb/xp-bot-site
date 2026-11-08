@@ -1,0 +1,11 @@
+{
+  "schema": 3,
+  "product": "XP BOT",
+  "bundleId": "local.gotbot.desktop",
+  "channel": "beta",
+  "target": {
+    "platform": "win32",
+    "arch": "arm64"
+  },
+  "release": null
+}
