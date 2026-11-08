@@ -7,5 +7,20 @@
     "platform": "win32",
     "arch": "x64"
   },
-  "release": null
+  "release": {
+    "notes": "XP BOT 内测版 v0.1 · Windows x64\n\n适用于 Windows 10 22H2（19045）或更新版本，以及 Windows 11 的 Intel / AMD x64 电脑。Windows ARM64 暂未提供安装包。\n\n- 官网账号登录、显示 ID 与头像、私密反馈和版本提醒。\n- 独立功能栏，置顶、项目和最近会话可折叠，功能可在设置中选择与排序。\n- 知识库、图片、机器人与 POP 大店助手按各自角色引导使用。\n- Python 与所需工具环境随包提供；图片语义检索模型首次启用时另行下载。\n- 不包含开发者的聊天、账号、密钥、浏览器登录态、私人知识库或业务明细；模型 API 和业务服务需自行配置及登录。\n\n安装：登录官网并验证邮箱后下载，运行 XP-BOT-v0.1-Windows-x64.exe 并按向导操作。安装包尚未正式代码签名，请核对官网来源及 SHA256。\n升级：先完成任务并退出 XP BOT，再运行新版安装器覆盖安装；已有本机资料继续保留。\n内测范围：已在 Windows 11 x64 完成本机安装、重装和资料保留检查，更多设备的兼容性继续完善。",
+    "assets": [
+      {
+        "id": "84621b65-3d88-410b-bb96-c07ee5c06c16",
+        "arch": "x64",
+        "size": 941326768,
+        "sha256": "07b496d61f28e39188be3eebe2275d76af50cf4a6e1cfcf9c37c602709eade4e",
+        "filename": "XP-BOT-v0.1-Windows-x64.exe",
+        "platform": "win32"
+      }
+    ],
+    "version": "0.3.15",
+    "publishedAt": "2026-11-08T15:13:54.857076+00:00",
+    "displayVersion": "内测版 v0.1"
+  }
 }
